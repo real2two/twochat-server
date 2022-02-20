@@ -1,7 +1,7 @@
 # twochat.pages.dev server.
 A scuffed chat server.
 
-#### Links
+## Links
 
 Website: https://twochat.pages.dev/
 
