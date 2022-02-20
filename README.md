@@ -1,13 +1,13 @@
 # twochat.pages.dev server.
 A scuffed chat server.
 
-### Links
+#### Links
 
 Website: https://twochat.pages.dev/
 
 Frontend repository: https://github.com/real2two/twochat
 
-### Setup
+## Setup
 
 Download all the node modules using:
 ```
