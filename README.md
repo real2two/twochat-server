@@ -14,6 +14,15 @@ Download all the node modules using:
 yarn install
 ```
 
+Make a file called `.env` with:
+```
+PORT=80
+
+WS_IDLE_TIMEOUT=60
+WS_MAX_BACKPRESSURE=1024
+WS_MAX_PAYLOAD_LENGTH=512
+```
+
 Start up the server using:
 ```
 node .
