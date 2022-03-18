@@ -1,5 +1,3 @@
-const ip_header = process.env.IP_HEADER;
-
 module.exports = (res, req, context) => {
     const protocols_raw = req.getHeader('sec-websocket-protocol'); // Checks if there's a websocket protocol.
     if (!protocols_raw) return res.writeStatus('400').end(); // If there's no websocket protocol, send Bad Request.
