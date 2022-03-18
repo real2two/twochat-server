@@ -1,4 +1,4 @@
-let connections = require("./connections");
+const connections = require("./connections");
 
 module.exports = async ws => {
     // Add the websocket as part of the "connections" array.
@@ -6,5 +6,5 @@ module.exports = async ws => {
 
     // Sends join message.
     const content = JSON.stringify({ a: 0, u: ws.username });
-    for (let connection of connections) connection.send(content);
+    for (const connection of connections) connection.send(content);
 }
