@@ -11,12 +11,9 @@ module.exports = (res, req, context) => {
     if (!username.length) return res.writeStatus('400').end();
     if (username.length > 16) return res.writeStatus('400').end();
     if (username.replace(/[0-9a-zA-Z]/g, "").length > 0) return res.writeStatus('400').end();
-    
-    const ip = (ip_header ? req.getHeader(ip_header) : undefined) || new TextDecoder().decode(res.getRemoteAddressAsText()); // Gets the user's IP.
 
     res.upgrade(
         {
-           ip,
            username
         },
 
